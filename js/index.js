@@ -92,6 +92,7 @@ navLinks[5].textContent = siteContent['nav']['nav-item-6'];
 
 // HEADER DOM IS AWESOME
 h1Head.textContent = siteContent['cta']['h1'];
+h1Head.innerHTML = "DOM<br> Is<br> Awesome";
 // HEADER IMAGE
 headImg.setAttribute('src', siteContent["cta"]["img-src"]);
 // BUTTON CONTENT
@@ -129,8 +130,8 @@ para[4].textContent = siteContent['main-content']['vision-content'];
 // CONTACT HEADER
 h4Head[5].textContent = siteContent['contact']['contact-h4'];
 // CONTACT ADDRESS
-para[5].outerHTML = siteContent['contact']['address'];
-
+// para[5].textContent = siteContent['contact']['address'];
+const newLocal = para[5].innerHTML = "123 Way 456 Street <br> Somewhere, USA";
 // CONTACT PHONE
 para[6].textContent = siteContent['contact']['phone'];
 // CONTACT EMAIL
