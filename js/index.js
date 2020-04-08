@@ -1,13 +1,11 @@
 const siteContent = {
   "nav": {
-    "navTag1": "Home",
     "nav-item-1": "Services",
     "nav-item-2": "Product",
     "nav-item-3": "Vision",
     "nav-item-4": "Features",
     "nav-item-5": "About",
     "nav-item-6": "Contact",
-    "navTag2": "Something",
     "img-src": "img/logo.png"
   },
   "cta": {
@@ -154,7 +152,7 @@ navBarAdd.prepend(addAnchor2);
 
 // CHANGE LINK COLORS TO GREEN
 let navBar = document.querySelectorAll("a");
-navBar.forEach(function(items){
+navBar.forEach(function (items) {
   items.style.color = "green"
 })
 
