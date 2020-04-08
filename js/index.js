@@ -40,7 +40,7 @@ const siteContent = {
 
     "vision-content": "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
   },
-  
+
   "contact": {
     "contact-h4": "Contact",
     "address": "123 Way 456 Street Somewhere, USA",
@@ -63,16 +63,16 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //  a
 const navLinks = document.querySelectorAll('a');
 // h1
-const h1Head = document.querySelector('h1'); 
-// id cta-img
+const h1Head = document.querySelector('h1');
+// img
 const headImg = document.getElementById("cta-img");
 // button
 const butt = document.querySelector('button');
 // h4
 const h4Head = document.querySelectorAll('h4');
 // p
-const para = document.querySelectorAll('p');
-// id middle-img"
+const para = document.querySelectorAll("p");
+// id i"
 const middleImg = document.getElementById("middle-img");
 
 // NAV VARIABLE
@@ -95,16 +95,21 @@ h1Head.textContent = siteContent['cta']['h1'];
 headImg.setAttribute('src', siteContent["cta"]["img-src"]);
 // BUTTON CONTENT
 butt.textContent = siteContent['cta']['button'];
+
+
 // FEATURES HEADER
 h4Head[0].textContent = siteContent['main-content']['features-h4'];
 // FEATURES CONTENT 
 para[0].textContent = siteContent['main-content']['features-content'];
+
 // ABOUT HEADER
 h4Head[1].textContent = siteContent['main-content']['about-h4'];
 // ABOUT CONTENT
 para[1].textContent = siteContent['main-content']['about-content'];
+
 // MIDDLE IMAGE BANNER
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
 // SERVICES HEADER
 h4Head[2].textContent = siteContent['main-content']['services-h4'];
 // SERVICES CONTENT
@@ -114,19 +119,23 @@ para[2].textContent = siteContent['main-content']['services-content'];
 h4Head[3].textContent = siteContent['main-content']['product-h4'];
 // PRODUCT CONTENT
 para[3].textContent = siteContent['main-content']['product-content'];
+
 // VISION HEADER
 h4Head[4].textContent = siteContent['main-content']['vision-h4'];
 // VISION CONTENT
 para[4].textContent = siteContent['main-content']['vision-content'];
+
 // CONTACT HEADER
 h4Head[5].textContent = siteContent['contact']['contact-h4'];
+// CONTACT ADDRESS
+para[5].textContent = siteContent['contact']['address'];
+// CONTACT PHONE
+para[6].textContent = siteContent['contact']['phone'];
+// CONTACT EMAIL
+para[7].textContent = siteContent['contact']['email'];
 
-
-
-h4Head[5].textContent = siteContent['main-content']['contact-h4'];
-
-
-
+// FOOTER COPYRIGHT
+para[8].textContent = siteContent['footer']['copyright'];
 
 
 
