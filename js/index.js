@@ -1,11 +1,13 @@
 const siteContent = {
   "nav": {
+    "navTag1": "Home",
     "nav-item-1": "Services",
     "nav-item-2": "Product",
     "nav-item-3": "Vision",
     "nav-item-4": "Features",
     "nav-item-5": "About",
     "nav-item-6": "Contact",
+    "navTag2": "Something",
     "img-src": "img/logo.png"
   },
   "cta": {
@@ -79,6 +81,7 @@ const middleImg = document.getElementById("middle-img");
 
 
 // NAVIGATION ITEMS
+
 navLinks[0].textContent = siteContent['nav']['nav-item-1'];
 navLinks[1].textContent = siteContent['nav']['nav-item-2'];
 navLinks[2].textContent = siteContent['nav']['nav-item-3'];
@@ -128,7 +131,8 @@ para[4].textContent = siteContent['main-content']['vision-content'];
 // CONTACT HEADER
 h4Head[5].textContent = siteContent['contact']['contact-h4'];
 // CONTACT ADDRESS
-para[5].textContent = siteContent['contact']['address'];
+para[5].outerHTML = siteContent['contact']['address'];
+
 // CONTACT PHONE
 para[6].textContent = siteContent['contact']['phone'];
 // CONTACT EMAIL
@@ -138,15 +142,21 @@ para[7].textContent = siteContent['contact']['email'];
 para[8].textContent = siteContent['footer']['copyright'];
 
 
+// ADD TWO MORE LINKS
+let navBarAdd = document.querySelector("nav");
+let addAnchor = document.createElement('a');
+let addAnchor2 = document.createElement('a');
+addAnchor.textContent = 'Cool Stuff';
+addAnchor2.textContent = 'Home'
+navBarAdd.append(addAnchor);
+navBarAdd.prepend(addAnchor2);
 
 
-
-
-
-
-
-
-
+// CHANGE LINK COLORS TO GREEN
+let navBar = document.querySelectorAll("a");
+navBar.forEach(function(items){
+  items.style.color = "green"
+})
 
 
 
